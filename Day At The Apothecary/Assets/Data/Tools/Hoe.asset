@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Hoe
   m_EditorClassIdentifier: 
   description: 
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: -2051212539, guid: 9a4ef3d96e94d694da42740304c466c2, type: 3}
   gameModel: {fileID: 0}
   toolType: 0

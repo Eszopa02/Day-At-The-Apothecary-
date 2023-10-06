@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Garlic
   m_EditorClassIdentifier: 
   description: 
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: -41986953, guid: 12c73013a6e70bf4a909e18cdc652b1d, type: 3}
   gameModel: {fileID: 0}
