@@ -4,6 +4,33 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    public static InventoryManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        //If there is more than one instance, destroy the extra
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            //Set the static instance to this instance
+            Instance = this;
+        }
+    }
+
+    //Tool Slots
+    public ItemData[] tools = new ItemData[8];
+
+    //Tool in the player's hand
+    public ItemData equippedTool = null;
+
+    //Item Slots
+    public ItemData[] items = new ItemData[8];
+
+    //Item in the player's hand
+    public ItemData equippedItem = null;
     // Start is called before the first frame update
     void Start()
     {
